@@ -1,8 +1,16 @@
 # Corda
-Expolratory work focused on the Corda framework
+Expolratory work focused on the Corda framework.
+
+The following is a summarised excerpt from the official Corda documentation which can found at https://docs.corda.net/index.html
 
 ## Getting set up
 They have tried to make access to Corda as relatively simple as possible, using industry standard established tools.
+Just clone the Corda GitHub repo.
+
+```
+cd /
+sudo git clone https://github.com/corda/corda.git
+```
 
 ### A JVM
 Corda runs in a JVM and is written predominantly in Kotlin with some example use cases demonstrated in Java that they have incorporated to demonstrate that Kotlin and Java can work seemlessly together. They recommend the most recent production version of Java 8.
@@ -54,7 +62,10 @@ You can catch up with the latest code by selecting “VCS -> Update Project” i
 See [Getting set up: troubleshooting](https://docs.corda.net/getting-set-up-fault-finding.html).
 
 ## Networking requirements
-comming soon
+Corda uses AMQP/1.0 over TLS between nodes which is currently implemented using Apache Artemis, an embeddable message queue broker.
+Examples configs refer to common network ports of 10000-10003 but also appear to [completely customizable](https://docs.corda.net/corda-configuration-file.html).
+
+I do suggest we stick with the common ones for now as they do not confict with the other platforms requirements.
 
 ## Running in a Docker
-comming soon
+comming soon - when I can figure this out
