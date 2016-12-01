@@ -2,18 +2,29 @@
 Expolratory work focused on the Corda framework
 
 ## Getting set up
-We have tried to make access to Corda as relatively simple as possible, using industry standard established tools. Although it is possible to replace any of the recommendations below, we will find it a lot easier to support your efforts if you follow our guidelines. Saying that, we are also interested in problems that arise due to different configurations.
+They have tried to make access to Corda as relatively simple as possible, using industry standard established tools.
 
 ### A JVM
-Corda runs in a JVM and is written predominantly in Kotlin with some example use cases demonstrated in Java that we have incorporated to demonstrate that Kotlin and Java can work seemlessly together. We recommend the most recent production version of Java 8. The JDK can be obtained from Oracle. Other implementations of the JVM are not actively supported, but as mentioned, we are interested in finding out any issues you do have with them.
+Corda runs in a JVM and is written predominantly in Kotlin with some example use cases demonstrated in Java that they have incorporated to demonstrate that Kotlin and Java can work seemlessly together. They recommend the most recent production version of Java 8.
+
+[Get the JDK from Oracle](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) 
+
+Other implementations of the JVM are not actively supported, but they are interested in finding out any issues you do have with them.
 
 ### IntelliJ
-We strongly recommend the use of IntelliJ’s Development Environment known as IDEA. Download it for free from [JetBrains](https://www.jetbrains.com/idea/download/). The primary reason we recommend this particular IDE is that it integrates very well with our choice of language for Corda, “Kotlin”, as Jetbrains also support the development of Kotlin.
+They strongly recommend the use of #/IntelliJ’s Development Environment/# known as IDEA. It integrates very well with their choice of language for Corda, “Kotlin”, as Jetbrains also support the development of Kotlin.
 
+[Download it for free from JetBrains](https://www.jetbrains.com/idea/download/). 
+
+
+### Warning
 ```
-Warning
-
-When opening the Corda project for the first time from the IntelliJ splash screen, please use “Open” and then agree to import the Gradle project from the popup bubble. Don’t pick “Import” on the splash screen, because a bug in IntelliJ will cause the pre-packaged run configurations to be erased. If you see this warning too late, it’s no problem, just use * git checkout .idea/runConfiguration * or the version control tab in IntelliJ to undelete the files.
+When opening the Corda project for the first time from the IntelliJ splash screen, please use “Open” and then 
+agree to import the Gradle project from the popup bubble. 
+Don’t pick “Import” on the splash screen, because a bug in IntelliJ will cause the pre-packaged run configurations 
+to be erased. 
+If you see this warning too late, it’s no problem, just use * git checkout .idea/runConfiguration * or the 
+version control tab in IntelliJ to undelete the files.
 ```
 
 ### Kotlin
